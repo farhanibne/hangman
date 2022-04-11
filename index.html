@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="abc.png" type="image/x-icon">k
+
+  <!-- Bootstrap 4 CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  <title>Hangman -- DZ </title>
+</head>
+<body>
+<div class="container">
+  <h1 class="text-center">Hangman</h1>
+  <div class="text-center">Wrong Guesses: <span id='mistakes'>0</span> of <span id='maxWrong'></span></div>
+  <div class="text-center">
+    <img id='hangmanPic' src="./images/0.jpg" alt="">
+    
+    <p>Guess the Programming Language:</p> 
+    <p id="wordSpotlight">The word to be guessed goes here</p>
+    <div id="keyboard"></div><br>
+    <button class="btn btn-info" onClick="reset()">Reset</button>
+  </div> 
+</div>
+
+<script src='./js/hangman.js'></script>
+</body>
+</html>
